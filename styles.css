@@ -1,0 +1,81 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-family: 'Imperial Script', cursive;
+    font-size: 3rem;
+    color: #6f42c1;
+    margin-bottom: 30px;
+}
+.text-center{
+    font-weight: bold;
+    font-size: 80px;
+}
+.card {
+    border-radius: 15px;
+    border: none;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.btn-purple {
+    background-color: #6f42c1;
+    border-color: #6f42c1;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-purple:hover {
+    background-color: #5a2d9b;
+    border-color: #5a2d9b;
+    transform: translateY(-2px);
+    color: lightgray;
+}
+
+.btn-purple:active {
+    transform: translateY(2px);
+}
+
+#ingredientsList {
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#ingredientsList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input, textarea {
+    border-radius: 10px;
+}
+
+input:focus, textarea:focus {
+    border-color: #6f42c1;
+    box-shadow: 0 0 5px rgba(111, 66, 193, 0.7);
+}
+
+.shadow-lg {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+#recipeList li {
+    border-bottom: 1px solid #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#recipeList li:hover {
+    background-color: #f8f9fa;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4" style="font-family: 'Imperial Script', cursive;">Livro de Receitas</h1>
+
+        <div class="card mt-4 shadow-lg">
+            <div class="card-body">
+                <h5 class="card-title">Adicione uma nova receita!</h5>
+                <form id="recipeForm">
+                    <div class="form-group">
+                        <label for="recipeName">Nome da Receita</label>
+                        <input type="text" class="form-control" id="recipeName" placeholder="Nome da receita" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipeIngredients">Ingredientes</label>
+                        <input type="text" class="form-control" id="recipeIngredients" placeholder="Adicionar ingrediente">
+                        <button type="button" class="btn btn-purple mt-2" id="addIngredientBtn">Adicionar Ingrediente</button>
+                        <ul id="ingredientsList" class="list-group mt-2"></ul>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipeInstructions">Instruções</label>
+                        <textarea class="form-control" id="recipeInstructions" rows="4" placeholder="Adicione o Modo de Preparo" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-purple btn-lg">Salvar Receita</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card mt-4 shadow-lg">
+            <div class="card-body">
+                <h5 class="card-title">Suas Receitas</h5>
+                <ul id="recipeList" class="list-group">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
